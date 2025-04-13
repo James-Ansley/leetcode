@@ -1,0 +1,10 @@
+{
+  "name": "javascript-leetcode",
+  "version": "1.0.0",
+  "description": "Solutions to leetcode exercises in JavaScript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/James-Ansley/leetcode.git"
+  },
+  "private": true
+}
