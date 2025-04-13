@@ -5,7 +5,15 @@
  * @return {number}
  */
 function lengthOfLastWord(s) {
-    return s.trimEnd().split(/\s+/).at(-1).length;
+    let stop = s.length - 1;
+    while (s[stop] === " ") {
+        stop -= 1;
+    }
+    let start = stop;
+    while (start >= 0 && s[start] !== " ") {
+        start -= 1;
+    }
+    return stop - start;
 }
 
 export {lengthOfLastWord};
