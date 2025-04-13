@@ -1,4 +1,6 @@
 /**
+ * @see <https://leetcode.com/problems/longest-common-prefix>
+ *
  * @param {string[]} strings
  * @return {string}
  */
