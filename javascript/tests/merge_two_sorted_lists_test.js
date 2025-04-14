@@ -1,7 +1,7 @@
 import {assertEquals} from "@std/assert";
 import {ListNode, mergeTwoLists} from "@/merge_two_sorted_lists.js";
 
-Deno.test(function example_cases() {
+Deno.test(function exampleCases() {
     const case1 = toNodeList([1, 2, 4]);
     const case2 = toNodeList([1, 3, 4]);
     assertEquals(mergeTwoLists(case1, case2), toNodeList([1, 1, 2, 3, 4, 4]));
@@ -9,7 +9,7 @@ Deno.test(function example_cases() {
     assertEquals(mergeTwoLists(null, toNodeList([0])), toNodeList([0]));
 });
 
-Deno.test(function extra_cases() {
+Deno.test(function extraCases() {
     const case1 = toNodeList([1, 3, 5]);
     const case2 = toNodeList([2, 4, 6]);
     assertEquals(mergeTwoLists(case1, case2), toNodeList([1, 2, 3, 4, 5, 6]));

@@ -1,7 +1,7 @@
 import {assertEquals} from "@std/assert";
 import {longestCommonPrefix} from "@/longest_common_prefix.js";
 
-Deno.test(function example_cases() {
+Deno.test(function exampleCases() {
     const case1 = ["flower", "flow", "flight"];
     const case2 = ["dog", "racecar", "car"];
 
@@ -9,7 +9,7 @@ Deno.test(function example_cases() {
     assertEquals(longestCommonPrefix(case2), "");
 });
 
-Deno.test(function extra_cases() {
+Deno.test(function extraCases() {
     assertEquals(longestCommonPrefix(["foo"]), "foo");
     assertEquals(longestCommonPrefix([""]), "");
     assertEquals(longestCommonPrefix(["a", ""]), "");
