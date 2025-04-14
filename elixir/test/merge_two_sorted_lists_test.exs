@@ -2,12 +2,7 @@ defmodule MergeTwoSortedListsTest do
   use ExUnit.Case
 
   import MergeTwoSortedLists
-
-  defp to_node_list([]), do: nil
-
-  defp to_node_list([head | tail]) do
-    %ListNode{val: head, next: to_node_list(tail)}
-  end
+  import Utils
 
   test "example cases" do
     case1 = to_node_list([1, 2, 4])
